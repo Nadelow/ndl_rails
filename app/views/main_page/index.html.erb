@@ -1,0 +1,6 @@
+<%= form_with do %>
+  <%= label_tag(:str, "Введите строку:") %>
+  <%= text_field_tag(:str) %>
+  <%= select_tag(:checking_id, raw('<option value="1">#valid_brackets?</option><option value="2">#palindrome?</option>')) %>
+  <%= submit_tag("Проверить строку") %>
+<% end %>
